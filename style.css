@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #183883;
+    color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #183883;
+    color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer button {
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+footer button:hover {
+    background-color: #ddd;
+}
+
+.text-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Make the box rounded */
+}
+
+/* This is a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .text-box {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .box {
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .link-box {
+        flex-direction: column; /* Display links in a row for small screens */
+        width: 70%;
+    }
+
+    .link-box img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto; /* Center the box */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.box details {
+    margin-top: 20px; /* Add 20px margin above the details */
+}
+
+.box details ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: left;
+}
+
+.box details ul li {
+    padding: 5px 0; /* Add vertical padding to each list item */
+    border-bottom: 1px solid #ddd; /* Add a bottom border to each list item */
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; /* This ratio determines the height relative to the width */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%; /* Allow the container to take full width */
+    padding: 0 20px; /* Optional: Add padding to the sides */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column; /* Display elements vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: calc(100% - 40px); /* Subtract the left and right margins from the width */
+    text-align: center;
+    margin: 20px auto; /* Add 20px margin to the top and center horizontally */
+}
+
+
+.link-box .links {
+    display: flex;
+    flex-direction: row; /* Display links in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Add space between header and links */
+}
+
+.link-box h2 {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Add some space below the header */
+}
+
+.link-box a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Change link color */
+    margin: 0 10px; /* Adjust spacing between links */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.link-box a:hover {
+    transform: scale(1.1); /* Enlarge the link on hover */
+}
+
+.link-box img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.link-box img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
